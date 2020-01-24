@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <br>
+    {% for each in data.doclist %}
+        <a href='{{ each.link }}'>{{ each.filename }}</a> 
+        {% if each.modified > -30 %}
+            <style color='Red'>Updated!</style>
+        {% endif %}
+        <br>
+        <hr>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+{% endblock %}

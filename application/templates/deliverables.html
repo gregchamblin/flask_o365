@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>{{ data.storebrand }}{{ data.storenumber }} {{ data.constphase }}</h3>
+        </div>
+    </div>
+
+    <table style = "width:90%">
+        {% for each in data.typedetails %}
+            {% if each.constphase == data.constphase %}
+                {% for set in each.typeinfo %}
+                    <tr style = "border-top: 1px solid">
+                        <td width="66%">
+                            <font size="4">{{ set.hwlabel }}</font>
+                            <br><font size="2">{{ set.hwdescription }}</font>
+                        </td>
+                        <td width="33%">
+                            <font size="2">
+                            {% if set.filecount|int > 0 %}
+                                {{ set.filecount }} image(s) for registers have been uploaded.
+                                <br>Upload more:
+                            {% else %}
+                                Upload images:
+                            {% endif %}
+                            <form method="POST" enctype="multipart/form-data">
+                                {{ form.image }}
+                                <br>{{ form.upload }}{{ form.count (value=set.filecount) }}{{ form.imagetype (value=set.hwtype) }}
+                            </form>
+                            </font>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </table>
+<br>
+<br>
+<br>
+{% endblock %}

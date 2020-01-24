@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Submit Issue:</h1> At this time you will not get a confirmation that the issue submitted correctly.
+
+
+
+<form method="POST" enctype="multipart/form-data">
+    {{ form.storebrand.label }}: {{ form.storebrand() }}<br />
+    {{ form.storenumber.label }}: {{ form.storenumber() }}<br />
+    {{ form.devaffected.label }}: {{ form.devaffected() }}<br />
+    {{ form.issuedesc.label }}: {{ form.issuedesc() }}<br />
+    {{ form.tech.label }}: {{ form.tech() }}<br />
+    {{ form.image }}<br />
+    {{ form.upload }}
+</form>
+
+{% endblock %}

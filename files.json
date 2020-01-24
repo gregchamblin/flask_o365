@@ -1,0 +1,294 @@
+{
+    "Value" : [
+        {    
+            "constphase": "Temp/Wire",
+            "typeinfo": [
+                {
+                    "hwtype" : "network",
+                    "hwlabel" : "Network",
+                    "hwdescription" : "Picture showing Cabbage case powered on, all patch cables connected and DSL connected, Picture of patch panel terminated.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "aps",
+                    "hwlabel" : "APs",
+                    "hwdescription" : "Pictures of each AP installed.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "terms",
+                    "hwlabel" : "Terminations",
+                    "hwdescription" : "All terminations(not at patch panel), properly located and labeled",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Temp/Box Confirmation",
+            "typeinfo": [
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Temp/Install",
+            "typeinfo": [
+
+                {
+                    "hwtype" : "wrap",
+                    "hwlabel" : "Cashwrap & Backwrap",
+                    "hwdescription" : "Pictures showing all registers, pinpads, and phones installed and powered on.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "manager",
+                    "hwlabel" : "Manager's Desk",
+                    "hwdescription" : "Powered on showing Controller, printer, and Fax (if applicable).",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Temp/De-Install",
+            "typeinfo": [
+                {
+                    "hwtype" : "case",
+                    "hwlabel" : "Cabbage Case",
+                    "hwdescription" : "Picture showing APs and LTE antennas de-installed and placed back in the box.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "wrap",
+                    "hwlabel" : "Cashwrap & Backwrap",
+                    "hwdescription" : "Pictures showing all equipment removed from both wraps.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "boxes",
+                    "hwlabel" : "Boxes",
+                    "hwdescription" : "Pictures of each layer as it is filled, pictures of sealed boxes stacked and ready for freight.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Temp/Revisit",
+            "typeinfo": [
+                {
+                    "hwtype" : "revisit",
+                    "hwlabel" : "Revisit",
+                    "hwdescription" : "Revisit Photos",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/CCV",
+            "typeinfo": [
+                {
+                    "hwtype" : "mpoe",
+                    "hwlabel" : "MPOE",
+                    "hwdescription" : "Picture of MPOE door and any identification, pictures of all interior walls, if fiber services exist include pictures of an existing circuit ID, and picture of conduit identified for store suite.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "suite",
+                    "hwlabel" : "Suite",
+                    "hwdescription" : "Picture of conduit coming from MPOE, Picture(s) of area(s) where IT rack and backboard will be placed, Misc interior pictures for status of construction.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/Pre-Wire",
+            "typeinfo": [
+                {
+                    "hwtype" : "backboard",
+                    "hwlabel" : "Backboard",
+                    "hwdescription" : "Picture showing backboard with No.6 ground and quad power outlet in-place.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "extensions",
+                    "hwlabel" : "Extensions",
+                    "hwdescription" : "Picture showing each end of the circuit and phone line extensions.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "runs",
+                    "hwlabel" : "Cable runs",
+                    "hwdescription" : "Picture showing each set of cable runs and the bundle at the rack.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/Wire",
+            "typeinfo": [
+                {
+                    "hwtype" : "cam",
+                    "hwlabel" : "Cameras",
+                    "hwdescription" : "Mounted and painted as needed.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "ap",
+                    "hwlabel" : "APs",
+                    "hwdescription" : "Mounted and painted as needed.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "rack",
+                    "hwlabel" : "IT rack",
+                    "hwdescription" : "Terminations to be completed, all patch cables installed and cable managed in an orderly fashion, Hardware installed in appropriate positions.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "wrap",
+                    "hwlabel" : "Cashwrap",
+                    "hwdescription" : "One image down the wrap showing POS are staged",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "lp",
+                    "hwlabel" : "LP/LVAN",
+                    "hwdescription" : "Keypad, Door Sensor and push button",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "terms",
+                    "hwlabel" : "Terminations",
+                    "hwdescription" : "All terminations(not in rack), properly located and labeled",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/Install",
+            "typeinfo": [
+                {
+                    "hwtype" : "reg",
+                    "hwlabel" : "Registers",
+                    "hwdescription" : "Powered on with a view of the cubby showing the printer pushed back.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "aio",
+                    "hwlabel" : "AIOs",
+                    "hwdescription" : "Powered on at the Back Office kiosk.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "pinpad",
+                    "hwlabel" : "Pinpads",
+                    "hwdescription" : "Showing correct brand images.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "phone",
+                    "hwlabel" : "Phones",
+                    "hwdescription" : "Powered on showing device extension.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "manager",
+                    "hwlabel" : "Manager's Desk",
+                    "hwdescription" : "Powered on showing Controller, printer, and Fax (if applicable).",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "install",
+                    "hwlabel" : "Install Checklist",
+                    "hwdescription" : "",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/De-Install",
+            "typeinfo": [
+                {
+                    "hwtype" : "itrack",
+                    "hwlabel" : "IT Rack",
+                    "hwdescription" : "Picture showing IT rack empty.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "wrap",
+                    "hwlabel" : "Cashwrap & Backwrap",
+                    "hwdescription" : "Pictures showing all equipment removed from both wraps.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "ceilings",
+                    "hwlabel" : "Ceilings",
+                    "hwdescription" : "Pictures of ceilings showing APs and cameras have been removed.",
+                    "filecount" : "0"
+                },
+                {
+                    "hwtype" : "other",
+                    "hwlabel" : "Other",
+                    "hwdescription" : "Other files or images that you feel like we need for this phase.",
+                    "filecount" : "0"
+                }
+            ]
+        },
+        {    
+            "constphase": "Perm/Revisit",
+            "typeinfo": [
+                {
+                    "hwtype" : "revisit",
+                    "hwlabel" : "Revisit",
+                    "hwdescription" : "Revisit Photos",
+                    "filecount" : "0"
+                }
+            ]
+        }
+    ]
+}

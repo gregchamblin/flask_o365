@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Find Store:</h1>
+
+<div class="row">
+    <div class="col-md-6 offset-md-1">
+
+        <form action="{{url_for('deliverables')}}" name="store_search" method="POST">
+            {{ form.storebrand.label }}: {{ form.storebrand() }}<br />
+            {{ form.storenumber.label }}: {{ form.storenumber() }}<br />
+            {{ form.constphase.label }}: {{ form.constphase() }}<br />
+            {{ form.search() }}<br />
+            <br>Note: Verify that you have the correct store number, or your images will be attributed to the wrong store.
+        </form>
+    </div>
+</div>
+
+
+ {% endblock %}
