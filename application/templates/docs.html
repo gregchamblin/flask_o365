@@ -4,8 +4,10 @@
     <br>
     {% for each in data.doclist %}
         <a href='{{ each.link }}'>{{ each.filename }}</a> 
-        {% if each.modified > -30 %}
-            <style color='Red'>Updated!</style>
+        {% set mod = each.modified | int %}
+
+        {% if mod >= -61 %}
+            <b style="color:Red;">   Updated!</b>
         {% endif %}
         <br>
         <hr>
