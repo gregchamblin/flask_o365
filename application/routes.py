@@ -3,7 +3,6 @@ from flask import Flask, request, render_template, redirect, json, Response, url
 from application.forms import SearchForm, UploadForm, IssuesForm, CheckInOutForm
 import requests
 from fileaccess import file_names, file_upload, list_tech_docs, incident_upload, checkinout
-from werkzeug.utils import secure_filename
 
 @app.route("/")
 @app.route("/index")
