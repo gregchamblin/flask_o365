@@ -85,7 +85,7 @@ def checkinout(params):
     token_info = private.get_auth()
     url = private.return_urls('checkinout_list')
 
-    itempost = requests.post(url + 'items', json=params, headers=token_info)
+    itempost = requests.post(url + '/items', json=params, headers=token_info)
 
     if itempost.status_code != 201:
         raise Exception(itempost.json())

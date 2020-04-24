@@ -7,15 +7,15 @@
      <div class="col-md-6 offset-md-1">
         {% from "_formhelpers.html" import render_field %}
         <form name="checkinout" method="POST">
-            {{ form.storebrand.label }}: {{ render_field(form.storebrand) }}<br />
-            {{ form.storenumber.label }}: {{ render_field(form.storenumber) }}<br />
-            {{ form.techonename.label }}: {{ render_field(form.techonename) }}<br />
-            {{ form.techtwoname.label }}: {{ render_field(form.techtwoname) }}<br />
-            {{ form.activitytype.label }}: {{ render_field(form.activitytype) }}<br />
-            {{ form.datefield.label }}: {{ render_field(form.datefield) }}<br />
-            {{ form.timefield.label }}: {{ render_field(form.timefield) }}<br />
-            {{ form.notes.label }}: Including additional techs.<br /> 
-            {{ render_field(form.notes) }}<br />
+            {{ form.storebrand.label }}: {{ form.storebrand }}<br />
+            {{ form.storenumber.label }}: {{ form.storenumber }}<br />
+            {{ form.techonename.label }}: {{ form.techonename }}<br />
+            {{ form.techtwoname.label }}: {{ form.techtwoname }}<br />
+            {{ form.activitytype.label }}: {{ form.activitytype }}<br />
+            {{ form.datefield.label }}: {{ form.datefield }}<br />
+            {{ form.timefield.label }}: {{ form.timefield }}<br /><br />
+            {{ form.notes.label }}: Including additional techs.<br />
+            {{ form.notes }}<br />
             {{ form.submit() }}
         </form>
      </div>

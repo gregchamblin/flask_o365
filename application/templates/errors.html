@@ -2,6 +2,9 @@
 
 {% block content %}
 
-    <h1 style = "color:red" >{{ data.error }}</h1>
+    {% for key, value in data.items() %}
+        <p style = "color:red" >{{ key|e }}<br />
+        {{ value|e }}<br />
+    {% endfor %}
 
 {% endblock %}

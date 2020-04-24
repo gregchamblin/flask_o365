@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import FileField, HiddenField, SelectField, StringField, SubmitField, TextAreaField#, DateField, TimeField
+from wtforms import FileField, HiddenField, SelectField, StringField, SubmitField, TextAreaField, DateField, TimeField
 from wtforms.validators import DataRequired
-import wtforms.fields.html5 as html5
+#import wtforms.fields.html5 as html5
 
 brands = SelectField("Store Brand", validators=[DataRequired()], choices=[('VSS','VSS'),('BBW','BBW')])
 numbers = StringField("Store Number", validators=[DataRequired()])
@@ -25,8 +25,8 @@ class CheckInOutForm(FlaskForm):
     techtwoname = StringField("Tech Two Name")
     storebrand = brands
     storenumber = numbers
-    datefield = html5.DateField("Date of Arrival", validators=[DataRequired()])
-    timefield = html5.TimeField("Time of Arrival")
+    datefield = DateField("Date of Arrival", validators=[DataRequired()])
+    timefield = TimeField("Time of Arrival", validators=[DataRequired()])
     activitytype = SelectField("Activity", validators=[DataRequired()], choices=[('Check-In','Check-In'),('Check-Out','Check-Out')])
     notes = TextAreaField("Notes")
     submit = SubmitField("Submit")

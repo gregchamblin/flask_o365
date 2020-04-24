@@ -65,7 +65,7 @@ def checkinoutpage():
         try:
             checkinout(params)
         except Exception as e:
-            return render_template("errors.html", data={"error":str(e)})
+            return render_template("errors.html", data={"error":str(e), "Title": techonename, "Store": storebrand + storenumber, "TechAssistantName": techtwoname, "Activity": activitytype, "Notes": notes, "Date": date, "Time": time})
         return redirect("/")
     return render_template("checkinout.html", form=checkinoutform)
 
