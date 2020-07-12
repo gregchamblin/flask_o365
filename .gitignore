@@ -1,2 +1,7 @@
 Private
 venv
+.vscode
+__pycache__
+tests.py
+files.json
+.env

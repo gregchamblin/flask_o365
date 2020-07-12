@@ -1,17 +1,28 @@
 from flask_wtf import FlaskForm
 from wtforms import FileField, HiddenField, SelectField, StringField, SubmitField, TextAreaField, DateField, TimeField
 from wtforms.validators import DataRequired
+import json
 #import wtforms.fields.html5 as html5
 
-brands = SelectField("Store Brand", validators=[DataRequired()], choices=[('VSS','VSS'),('BBW','BBW')])
+def fieldlist (fieldtype, key1, key2):
+    jsondata = json.load(open('files.json'))
+    brands = jsondata[fieldtype]
+    brandlistdata = []
+    for each in brands:
+        data = (each[key1], each[key2])
+        brandlistdata.append(data)
+    return brandlistdata
+
+brand_list = fieldlist("Brands", "brand", "subbrand")
+constphase_list = fieldlist("Phases", "constphase", "constphase")
+
+brands = SelectField("Store Brand", validators=[DataRequired()], choices=brand_list)
 numbers = StringField("Store Number", validators=[DataRequired()])
 
 class SearchForm(FlaskForm):
     storebrand = brands
     storenumber = numbers
-    constphase = SelectField("Construction Phase", validators=[DataRequired()], choices=[('Temp/Wire','Temp/Wire'),('Temp/Box Confirmation','Temp/Box Confirmation'),
-        ('Temp/Install','Temp/Install'),('Temp/De-Install','Temp/De-Install'),('Temp/Revisit','Temp/Revisit'),('Perm/CCV','Perm/CCV'),('Perm/Pre-Wire','Perm/Pre-Wire'),('Perm/Wire','Perm/Wire'),
-        ('Perm/Install','Perm/Install'),('Perm/De-Install','Perm/De-Install'),('Perm/Revisit','Perm/Revisit')])
+    constphase = SelectField("Construction Phase", validators=[DataRequired()], choices=constphase_list)
     search = SubmitField("Search")
 
 class UploadForm(FlaskForm):

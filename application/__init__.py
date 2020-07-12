@@ -1,7 +1,11 @@
 from flask import Flask
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = "mo\xf9\x83W\xc1\xb0\xd48\xd8\xca\t\x02.J\x05"
+app.secret_key = os.getenv("SECRETKEY")
 
 from application import routes
 

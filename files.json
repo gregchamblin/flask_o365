@@ -1,5 +1,19 @@
 {
-    "Value" : [
+    "Brands" : [
+        {
+            "brand" : "VSS",
+            "subbrand" : "VSS"
+        },
+        {
+            "brand" : "VSS",
+            "subbrand" : "PINK"
+        },
+        {
+            "brand" : "BBW",
+            "subbrand" : "BBW"
+        }
+    ],
+    "Phases" : [
         {    
             "constphase": "Temp/Wire",
             "typeinfo": [

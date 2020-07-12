@@ -8,7 +8,7 @@ def file_names(brand, storenum, phase):
     base_url = private.return_urls('deliverables_onedrive')
     token_info = private.get_auth()
     jsondata = json.load(open('files.json'))
-    values = jsondata['Value']
+    values = jsondata['Phases']
     filelist = []
 
     response = requests.get(base_url + '/' + brand + storenum + '/' + phase + ':/children?select=name', headers=token_info)
@@ -17,7 +17,7 @@ def file_names(brand, storenum, phase):
         raise Exception("Brand, store number or phase does not exist.")
     
     content = response.json()
-    filedets = content['value']
+    filedets = content['Phases']
     for each in filedets:
         for key in each:
             if key == 'name':
@@ -42,7 +42,7 @@ def list_tech_docs():
 
     doclist = []
     content = json.loads(requests.get(private.return_urls('docs_onedrive') + ':/children', headers=token_info).text)
-    values = content['value']
+    values = content['Phases']
     for each in values:
         mod = dt.datetime.strptime(each['lastModifiedDateTime'][:10], "%Y-%m-%d").date() - dt.date.today()
         mod = int(str(mod).split(" ")[0])
@@ -57,7 +57,7 @@ def incident_upload(brand, storenum, image, devaffected, issuedesc, tech):
 
     ticketnumber = 0
     content = response.json()
-    filedets = content['value']
+    filedets = content['Phases']
     for each in filedets:
         fieldsdict = each['fields']
         if int(fieldsdict['LinkFilename'][:9]) >= ticketnumber:
@@ -70,7 +70,7 @@ def incident_upload(brand, storenum, image, devaffected, issuedesc, tech):
 
     response = requests.get(url + '/list/items?$expand=fields', headers=token_info)
     content = response.json()
-    filedets = content['value']
+    filedets = content['Phases']
     for each in filedets:
         fieldsdict = each['fields']
         if fieldsdict['LinkFilename'] == str(ticketnumber) + '.jpg':
