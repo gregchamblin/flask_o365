@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="row row-cols-2">
-    <div class="col-md-12 text-center"><h3>{{ data.storebrand }}{{ data.storenumber }} {{ data.constphase }}</h3></div>
+    <div class="col-12 text-center"><h3>{{ data.storebrand }}{{ data.storenumber }} {{ data.constphase }}</h3></div>
     {% for each in data.typedetails %}
         {% if each.constphase == data.constphase %}
             {% for set in each.typeinfo %}
