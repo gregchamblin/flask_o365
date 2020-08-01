@@ -1,27 +1,32 @@
- {% extends "layout.html" %}
+{% extends "layout.html" %}
 
- {% block content %}
- <h1>Check-In/Out:</h1> At this time you will not get a confirmation that the form was submitted correctly.<br />
- <br />
- <div class="row">
-     <div class="col-md-6 offset-md-1">
-        {% from "_formhelpers.html" import render_field %}
-        <form name="checkinout" method="POST">
-            {{ form.storebrand.label }}: {{ form.storebrand }}<br />
-            {{ form.storenumber.label }}: {{ form.storenumber }}<br />
-            {{ form.techonename.label }}: {{ form.techonename }}<br />
-            {{ form.techtwoname.label }}: {{ form.techtwoname }}<br />
-            {{ form.activitytype.label }}: {{ form.activitytype }}<br />
-            {{ form.datefield.label }}: {{ form.datefield }}<br />
-            {{ form.timefield.label }}: {{ form.timefield }}<br /><br />
-            {{ form.notes.label }}: Including additional techs.<br />
-            {{ form.notes }}<br />
-            {{ form.submit() }}
-        </form>
-     </div>
- </div>
- <br />
- <br />
- <br />
+{% block content %}
+<h2>Check-In/Out:</h2> At this time you will not get a confirmation that the form was submitted correctly.<br />
+<br />
+{% from "_formhelpers.html" import render_field %}
+<form name="checkinout" method="POST">
+<div class="row row-cols-2 offset-sm-1">
+    <div class="col">{{ form.storebrand.label }}:</div>
+    <div class="col">{{ form.storebrand }}</div>
+    <div class="col">{{ form.storenumber.label }}:</div>
+    <div class="col">{{ form.storenumber }}</div>
+    <div class="col">{{ form.techonename.label }}:</div>
+    <div class="col">{{ form.techonename }}</div>
+    <div class="col">{{ form.techtwoname.label }}:</div>
+    <div class="col">{{ form.techtwoname }}</div>
+    <div class="col">{{ form.activitytype.label }}:</div>
+    <div class="col">{{ form.activitytype }}</div>
+    <div class="col">{{ form.datefield.label }}:</div>
+    <div class="col">{{ form.datefield }}</div>
+    <div class="col">{{ form.timefield.label }}:</div>
+    <div class="col">{{ form.timefield }}</div>
+    <div class="col">{{ form.notes.label }}: Including additional techs.</div>
+    <div class="col">{{ form.notes }}</div>
+    <div class="col">{{ form.submit() }}</div>
+</div>
+</form>
+<br />
+<br />
+<br />
  
-  {% endblock %}
+{% endblock %}

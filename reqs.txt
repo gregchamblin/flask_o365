@@ -1,8 +1,0 @@
-colorama
-Flask
-Flask-OAuthlib
-Flask-WTF
-Jinja2
-python-dateutil
-python-dotenv
-requests

@@ -2,17 +2,21 @@
 
 {% block content %}
 <h1>Submit Issue:</h1> At this time you will not get a confirmation that the issue submitted correctly.
-
-
-
 <form method="POST" enctype="multipart/form-data">
-    {{ form.storebrand.label }}: {{ form.storebrand() }}<br />
-    {{ form.storenumber.label }}: {{ form.storenumber() }}<br />
-    {{ form.devaffected.label }}: {{ form.devaffected() }}<br />
-    {{ form.issuedesc.label }}: {{ form.issuedesc() }}<br />
-    {{ form.tech.label }}: {{ form.tech() }}<br />
-    {{ form.image }}<br />
-    {{ form.upload }}
+<div class="row row-cols-2 offset-sm-1">
+    <div class="col">{{ form.storebrand.label }}:</div>
+    <div class="col">{{ form.storebrand() }}</div>
+    <div class="col">{{ form.storenumber.label }}:</div>
+    <div class="col">{{ form.storenumber() }}</div>
+    <div class="col">{{ form.devaffected.label }}:</div>
+    <div class="col">{{ form.devaffected() }}</div>
+    <div class="col">{{ form.issuedesc.label }}:</div>
+    <div class="col">{{ form.issuedesc() }}</div>
+    <div class="col">{{ form.tech.label }}:</div>
+    <div class="col">{{ form.tech() }}</div>
+    <div class="col offset-6">{{ form.image }}</div>
+    <div class="col">{{ form.upload }}</div>
+</div>
 </form>
 
 {% endblock %}

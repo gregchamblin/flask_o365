@@ -1,20 +1,19 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Find Store:</h1>
-
-<div class="row">
-    <div class="col-md-6 offset-md-1">
-
-        <form action="{{url_for('deliverables')}}" name="store_search" method="POST">
-            {{ form.storebrand.label }}: {{ form.storebrand() }}<br />
-            {{ form.storenumber.label }}: {{ form.storenumber() }}<br />
-            {{ form.constphase.label }}: {{ form.constphase() }}<br />
-            {{ form.search() }}<br />
-            <br>Note: Verify that you have the correct store number, or your images will be attributed to the wrong store.
-        </form>
-    </div>
+<h2>Find Store:</h2>
+<form action="{{url_for('deliverables')}}" name="store_search" method="POST">
+<div class="row row-cols-2 offset-sm-1">
+    <div class="col">{{ form.storebrand.label }}:</div>
+    <div class="col">{{ form.storebrand() }}</div>
+    <div class="col">{{ form.storenumber.label }}:</div>
+    <div class="col">{{ form.storenumber() }}</div>
+    <div class="col">{{ form.constphase.label }}:</div>
+    <div class="col">{{ form.constphase() }}</div>
+    <div class="col">{{ form.search() }}</div>
 </div>
+</form>
+<br>Note: Verify that you have the correct store number, or your images will be attributed to the wrong store.
 
 
  {% endblock %}
