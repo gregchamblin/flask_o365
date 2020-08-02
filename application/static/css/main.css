@@ -20,7 +20,7 @@ header {
 }
 
 input[type=text], input[type=password], input[type=select] {
-    width: 33%;
+    width: 75%;
     border: 1px;
     background: #eee;
 }
@@ -35,14 +35,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=select]:focus {
     padding:5px;
     border-bottom:2px solid #0f0f0f;
 }
-.bottom-menu {
+.home-menu {
     position:fixed;
-    right:0px;
-    bottom:0px;
-    border:2px solid #73AD21;
-    width: 75px;
-    font-size: medium;
-    line-height:46px;
+    left:0px;
+    top:0px;
+    padding:19px;
 }
 .bottom-container {
     background: #333;

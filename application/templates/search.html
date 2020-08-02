@@ -5,11 +5,11 @@
 <form action="{{url_for('deliverables')}}" name="store_search" method="POST">
 <div class="row row-cols-2 offset-sm-1">
     <div class="col">{{ form.storebrand.label }}:</div>
-    <div class="col">{{ form.storebrand() }}</div>
+    <div class="col-sm-4">{{ form.storebrand() }}</div>
     <div class="col">{{ form.storenumber.label }}:</div>
-    <div class="col">{{ form.storenumber() }}</div>
+    <div class="col-sm-4">{{ form.storenumber() }}</div>
     <div class="col">{{ form.constphase.label }}:</div>
-    <div class="col">{{ form.constphase() }}</div>
+    <div class="col-sm-4">{{ form.constphase() }}</div>
     <div class="col">{{ form.search() }}</div>
 </div>
 </form>
