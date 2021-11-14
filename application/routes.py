@@ -86,4 +86,19 @@ def issues():
         return redirect("/")
     return render_template("issues.html", form=issuesform)
 
+@app.route("/admin", methods=["GET","POST","PATCH"])
+def admin():
+    adminform = AdminForm(meta={"csrf": False})
+    if adminform.validate_on_submit():
+        storebrand = request.form.get('storebrand')
+        storenumber = "{:05d}".format(int(request.form.get('storenumber')))
+        devaffected = request.form.get('devaffected')
+        issuedesc = request.form.get('issuedesc')
+        tech = request.form.get('tech')
+        try:
+            incident_upload(storebrand, storenumber, f, devaffected, issuedesc, tech)
+        except Exception as e:
+            return render_template("errors.html", data={"error":str(e)})
+        return redirect("/")
+    return render_template("issues.html", form=issuesform)
 
